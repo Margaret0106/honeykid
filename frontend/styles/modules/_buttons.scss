@@ -1,0 +1,46 @@
+
+.btn {
+	font-family: $font-primary-regular;
+	font-weight: normal;
+	font-style: normal;
+	outline: none !important;
+	transition: $transition-primary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: inherit;
+	// &:active {
+	// 	box-shadow: none;
+	// }
+	// &:hover,
+	// &:active {
+	// 	transition: none;
+	// }
+}
+
+.btn-small {
+	text-transform: uppercase;
+	font-size: 15px;
+	border-radius: 20px;
+	background: #25b3b3;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 17px;
+	&:hover {
+		color: #fff;
+		background: lighten(#25b3b3, 5%);
+	}
+}
+
+.btn-orange {
+	background: #ff9c00;
+	color: #fff;
+	font-size: 32px;
+	height: 70px;
+	padding: 0 65px;
+	line-height: 70px;
+	border-radius: 45px;
+	&:hover {
+		color: #fff;
+		background: darken(#ff9c00, 3%);
+	}	
+}

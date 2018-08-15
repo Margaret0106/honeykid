@@ -1,0 +1,19 @@
+
+.link {
+  transition: $transition-primary;
+  &:focus {
+    color: #000;
+  }
+  &:hover,
+  &:active {
+    color: $color-primary;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}

@@ -1,0 +1,74 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  table.cart-table,
+  table.order-table {
+    tr {
+      display: block;
+    }
+    tr th {
+      display: none;
+    }
+    tr+tr {
+      td:last-child {
+        margin-bottom: 30px;
+      }
+    }
+    tr td img {
+      float: none;
+    }
+    tr td:first-child:before {
+      display: block;
+    }
+    tr td:first-child {
+      width: calc(30% - 20px);
+      display: inline-block;
+      height: 120px;
+      min-width: 100px;
+    }
+    tr td:nth-child(2) {
+      display: inline-block;
+      height: 120px;
+      vertical-align: middle;
+      padding-top: 50px;
+      max-width: 10000px;
+      width: 65%;
+      min-width: 100px;
+    }
+    tr td:nth-child(2):before {
+      display: none;
+    }
+    tr td {
+      text-align: left;
+      border-bottom: 0 !important;
+      @media (max-width: 767px) {
+        max-width: 1000000px !important;
+        text-align: left !important;
+      }
+    }
+    .input-group {
+      display: inline-table;
+    }
+    td {
+      display: block;
+      text-align: left;
+      &:first-child {
+        padding-top: .5em;
+      }
+      &:last-child {
+        padding-bottom: .5em;
+      }
+      &:before {
+        content: attr(data-th); // who knew you could do this? The internet, that's who.
+        font-weight: bold; // optional stuff to make it look nicer
+        width: 30%; // magic number :( adjust according to your own content
+        display: inline-block; // end options
+      }
+    }
+  }
+
+}

@@ -1,0 +1,41 @@
+
+.form-control {
+  height: 40px;
+  padding: 10px 16px 12px;
+  font-family: $font-primary-regular;
+  font-size: 18px;
+  border: 1px solid #bcbdbe;
+  border-radius: 0;
+  box-shadow: none;
+  transition: border $transition-primary;
+  text-align: left;
+  @media (max-width: 1600px) {
+    font-size: 16px;
+  }
+  &:hover {
+    border-color: rgba($color-primary,.45);
+    transition: none;
+  }
+  &:focus,
+  &:active {
+    border-color: rgba($color-primary, .7);
+    box-shadow: 0 0 5px rgba($color-primary,.4); 
+    transition: none;
+  }
+  &::-webkit-input-placeholder {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &:-moz-placeholder {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &::-moz-placeholder {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &:-ms-input-placeholder {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }          
+}
